@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Aprende los animales</title>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="../../assets/img/favicon.png" />
+    <link rel="icon" href="../../assets/img/favicon.png" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css.map" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="contadorPuntos1" class="score_container">
+        <section id="score_counter_no_points" class="score_counter  no_points">
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+
+        </section>
+
+        <section id="score_counter_one_point" class="score_counter hidden one_point">
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+
+        </section>
+
+        <section id="score_counter_two_points" class="score_counter hidden two_points">
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+
+        </section>
+
+        <section id="score_counter_three_points" class="score_counter hidden three_points">
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+
+        </section>
+
+        <section id="score_counter_four_points" class="score_counter hidden four_points">
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+
+        </section>
+
+        <section id="score_counter_five_points" class="score_counter hidden five_points">
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+
+        </section>
+        <section id="score_counter_six_points" class="score_counter hidden six points">
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"></span>
+
+        </section>
+
+    </div>
+
+    <div id="boardGame1" class="game">
+        <div class="reminder">
+            Une a cada animale con su huella
+        </div>
+        <div class="flip_container1">
+
+          
+
+            <!-- imagen de los animales -->
+
+            <div class="memory-card" data-img="ciervo_card">
+                <img class="front animal_pic" src="../../assets/img/fondos-03.png" alt="patron2">
+
+                <img class="back ciervo" id="ciervo_pic" src="../../assets/img/juego_2_ciervo.png" alt="ciervo2">
+
+            </div>
+            <div class="memory-card" data-img="coyote_card">
+                <img class="front animal_pic" src="../../assets/img/fondos-03.png" alt="patron2">
+
+                <img class="back coyote" id="coyote_pic" src="../../assets/img/juego_2_coyote.png" alt="coyote2">
+
+            </div>
+            <div class="memory-card" data-img="oso_card">
+                <img class="front animal_pic" src="../../assets/img/fondos-03.png" alt="patron2">
+
+                <img class="back oso" id="oso_pic" src="../../assets/img/juego_2_oso.png" alt="oso2">
+
+            </div>
+            <div class="memory-card" data-img="rana_card">
+                <img class="front animal_pic" src="../../assets/img/fondos-03.png" alt="patron2">
+
+                <img class="back rana" id="rana_pic" src="../../assets/img/juego_2_rana.png" alt="rana2">
+
+            </div>
+            <div class="memory-card" data-img="jirafa_card">
+                <img class="front animal_pic" src="../../assets/img/fondos-03.png" alt="patron2">
+
+                <img class="back jirafa" id="jirafa_pic" src="../../assets/img/juego_2_jirafa.png" alt="jirafa2">
+
+            </div>
+            <div class="memory-card" data-img="tucan_card">
+                <img class="front animal_pic" src="../../assets/img/fondos-03.png" alt="patron2">
+
+                <img class="back tucan" id="tucan_pic" src="../../assets/img/juego_2_tucan.png" alt="tucan2">
+
+            </div>
+
+             <!-- ecosistemas  -->
+
+             <div class="memory-card" data-img="ciervo_card">
+                <img class="front ecosystem" src="../../assets/img/fondos-05.png" alt="patron4">
+
+                <img class="back ciervo" id="ciervo_pic" src="../../assets/img/juego_4_ciervo.png" alt="ciervo2">
+
+            </div>
+            <div class="memory-card" data-img="coyote_card">
+                <img class="front ecosystem" src="../../assets/img/fondos-05.png" alt="patron4">
+
+                <img class="back coyote" id="coyote_pic" src="../../assets/img/juego_4_coyote.png" alt="coyote2">
+
+            </div>
+            <div class="memory-card" data-img="oso_card">
+                <img class="front ecosystem" src="../../assets/img/fondos-05.png" alt="patron4">
+
+                <img class="back oso" id="oso_pic" src="../../assets/img/juego_4_oso.png" alt="oso2">
+
+            </div>
+            <div class="memory-card" data-img="rana_card">
+                <img class="front ecosystem" src="../../assets/img/fondos-05.png" alt="patron4">
+
+                <img class="back rana" id="rana_pic" src="../../assets/img/juego_4_rana.png" alt="rana2">
+
+            </div>
+            <div class="memory-card" data-img="jirafa_card">
+                <img class="front ecosystem" src="../../assets/img/fondos-05.png" alt="patron4">
+
+                <img class="back jirafa" id="jirafa_pic" src="../../assets/img/juego_4_jirafa.png" alt="jirafa2">
+
+            </div>
+            <div class="memory-card" data-img="tucan_card">
+                <img class="front ecosystem" src="../../assets/img/fondos-05.png" alt="patron4">
+
+                <img class="back tucan" id="tucan_pic" src="../../assets/img/juego_4_tucan.png" alt="tucan2">
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="instrucciones_in_lvl">
+            Recuerda que las combinaciones de los animales están entre cartas de distinto patrón
+        </div>
+        <div class="home">
+            <a class="homelink" href="../../index.html"><span class="iconify" data-icon="bx:bxs-home" data-inline="false"></span></a>
+
+        </div>
+
+
+    </div>
+    <div class="siguientelvl2 " id="pasarAlNivel2">
+        <div class="level1completed">
+        <h1>Nivel 3</h1>
+        <h2>¡completado!</h2>
+        </div>
+        <button class="nextlvl">
+            <a class="vamoajugar" href="nivel_4.html">¡Siguiente nivel!</a>
+
+        </button>
+
+
+    </div>
+    <script src="../main.js"></script>
+
+</body>
+
+</html>

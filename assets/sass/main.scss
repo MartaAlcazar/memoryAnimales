@@ -1,0 +1,525 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+
+// * {
+//   border: 1px solid green;
+// }
+
+.landing_body {
+  background-color: #9cb478;
+
+}
+
+.instrucciones_body {
+  background-color: #9cb478;
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 2rem;
+
+
+
+  h1 {}
+
+  section {
+    p {}
+  }
+
+  .letsplay {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 1rem;
+      margin-bottom: .5rem;
+      color: white;
+
+    }
+
+    .vamoajugar {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 470px) {
+
+  .instrucciones_body {
+    margin: 0 1rem;
+
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+
+  .instrucciones_body {
+    margin: 0 1rem;
+
+  }
+}
+
+.landing_page {
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+
+  h2 {
+    margin: 10rem 1rem 1rem 1rem;
+    font-size: 2rem;
+
+    a {
+      color: rgba(244, 244, 244, 0.836)
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 1rem;
+
+    a {
+      color: white
+    }
+
+  }
+
+}
+
+
+body {
+  background-color: #b3bbbd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .score_container {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 4rem;
+    color: white;
+
+    .score_counter.hidden {
+      display: none;
+    }
+
+    .score_counter {
+      display: inline;
+    }
+
+
+  }
+
+  @media screen and (max-width: 470px) {
+
+    .score_container {
+      font-size: 3rem;
+
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+
+
+    .score_container {
+      font-size: 2rem;
+
+
+
+    }
+  }
+
+  .game {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .reminder {
+      font-family: 'Varela Round', sans-serif;
+      color: white;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+
+
+    }
+
+    @media screen and (max-width: 700px) {
+
+
+      .reminder {
+        max-width: 70%;
+
+
+      }
+    }
+
+    @media screen and (max-width: 410px) {
+
+
+      .reminder {
+        font-size: .7rem;
+
+      }
+    }
+
+
+    .instrucciones_in_lvl {
+      font-family: 'Varela Round', sans-serif;
+      color: white;
+      margin: 2rem;
+      text-align: center;
+
+
+    }
+
+    @media screen and (max-width: 700px) {
+
+
+      .instrucciones_in_lvl {
+        max-width: 70%;
+
+
+      }
+    }
+
+    @media screen and (max-width: 410px) {
+
+
+      .instrucciones_in_lvl {
+        font-size: .7rem;
+        margin: 1rem;
+
+      }
+    }
+
+    .home  {
+      font-size: 2rem;
+      margin-top: -1.3rem;
+      .homelink{
+        color: rgb(72, 72, 72);
+
+      }
+    }
+    @media screen and (max-width: 700px) {
+
+
+      .home {
+        max-width: 70%;
+
+
+      }
+    }
+
+    @media screen and (max-width: 410px) {
+
+
+      .home {
+        margin-top: -.8rem;
+        font-size: 1.5rem;
+
+      }
+    }
+
+  }
+
+}
+
+.siguientelvl2 {
+  display: none;
+
+}
+
+.siguientelvl2.doShow {
+  position: fixed;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+
+
+  .level1completed {
+    text-align: center;
+
+    h1 {
+      color: black;
+      font-size: 3.5em;
+      margin: 0;
+    }
+
+    h2 {
+      color: black;
+
+    }
+  }
+
+  .nextlvl {
+    background-color: #b4d288;
+    border: none;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+
+    a {
+      color: black;
+      font-weight: bolder;
+
+    }
+
+  }
+
+}
+
+
+.game {
+  .flip_container1 {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem;
+    grid-gap: 12px;
+    perspective: 1000px;
+
+    .memory-card {
+      cursor: pointer;
+
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform .4s;
+
+      .front {
+
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        border: solid white .5rem;
+        border-radius: 5%;
+        position: absolute;
+        left: 0%;
+        backface-visibility: hidden;
+
+
+      }
+
+      @media screen and (max-width: 410px) {
+
+        .front {
+          border: solid white .4rem;
+
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+
+
+        .front {
+          border: solid white .3rem;
+
+
+
+        }
+      }
+
+      .front:hover {
+        -webkit-box-shadow: 1px 1px 7px 4px #616161;
+        box-shadow: 1px 1px 7px 4px #616161;
+        border-radius: 5%;
+
+      }
+
+
+      .back {
+        width: 100%;
+        height: 100%;
+        border: solid white .5rem;
+        border-radius: 5%;
+        backface-visibility: hidden;
+
+        transform: rotateY(180deg);
+
+
+      }
+
+      @media screen and (max-width: 410px) {
+
+        .back {
+          border: solid white .4rem;
+
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+
+
+        .back {
+          border: solid white .3rem;
+
+
+
+        }
+      }
+
+      .back:hover {
+        -webkit-box-shadow: 1px 1px 7px 4px #616161;
+        box-shadow: 1px 1px 7px 4px #616161;
+        border-radius: 5%;
+
+      }
+
+
+    }
+
+    .memory-card.flip {
+      transform: rotateY(180deg);
+    }
+
+    //     .memory-card.animate__animated.flip{
+    // border:2rem solid aqua;
+    // backface-visibility: hidden;
+
+
+    //     }
+  }
+
+  @media screen and (max-width: 715px) {
+    .flip_container1 {
+      grid-template-columns: 8rem 8rem 8rem;
+      grid-template-rows: 8rem 8rem 8rem 8rem;
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+    .flip_container1 {
+      grid-template-columns: 6rem 6rem 6rem;
+      grid-template-rows: 6rem 6rem 6rem 6rem;
+      grid-gap: 10px
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .flip_container1 {
+      grid-template-columns: 5rem 5rem 5rem;
+      grid-template-rows: 5rem 5rem 5rem 5rem;
+      grid-gap: 8px;
+
+      .front {
+        border: solid white .1rem;
+
+      }
+
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .container {
+//   display: grid;
+//   width: 100%;
+//   min-height: 100vh;
+//   grid-template-columns: 300px 1fr;
+// }
+
+// .sidebar {
+//   grid-area: 1 / 1 / span 1 / span 1;
+//   background-color: #eee;
+//   padding: 2rem;
+//   position: fixed;
+//   width: 300px;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   overflow: auto;
+// }
+
+// .content {
+//   grid-area: 1 / 2 / span 1 / span 1;
+//   padding: 2rem;
+// }
+
+// .content * {
+//   max-width: 70ch;
+// }
+
+// .colors {
+//   display: grid;
+//   grid-template-columns: repeat(6, 1fr);
+//   grid-gap: 1rem;
+//   margin: 2rem 0;
+//   page-break-inside: avoid;
+// }
+
+// .color {
+//   height: 200px;
+//   background-color: #eee;
+// }
+
+// .footnote {
+//   footnote-style-position: inside;
+// }
+
+// .slab {
+//   background-color: #eee;
+//   padding: 1rem;
+//   margin: 1rem 0;
+// }
+
+// .floating {
+//   float: right;
+//   clear: both;
+// }
+
+// @media print {
+//   @page {
+//     size: A4 landscape;
+//   }
+
+//   body {
+//     font-size: 11pt;
+//     line-height: 1.4;
+//   }
+
+//   * {
+//     border: 1px solid blue;
+//   }
+
+//   .content {
+//     grid-area: 1 / 1 / span 1 / span 2;
+//     padding: 0;
+//   }
+
+//   .sidebar {
+//     display: none;
+//   }
+// }
