@@ -388,12 +388,7 @@ body {
       transform: rotateY(180deg);
     }
 
-    //     .memory-card.animate__animated.flip{
-    // border:2rem solid aqua;
-    // backface-visibility: hidden;
-
-
-    //     }
+ 
   }
 
   @media screen and (max-width: 715px) {
@@ -429,97 +424,3 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .container {
-//   display: grid;
-//   width: 100%;
-//   min-height: 100vh;
-//   grid-template-columns: 300px 1fr;
-// }
-
-// .sidebar {
-//   grid-area: 1 / 1 / span 1 / span 1;
-//   background-color: #eee;
-//   padding: 2rem;
-//   position: fixed;
-//   width: 300px;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   overflow: auto;
-// }
-
-// .content {
-//   grid-area: 1 / 2 / span 1 / span 1;
-//   padding: 2rem;
-// }
-
-// .content * {
-//   max-width: 70ch;
-// }
-
-// .colors {
-//   display: grid;
-//   grid-template-columns: repeat(6, 1fr);
-//   grid-gap: 1rem;
-//   margin: 2rem 0;
-//   page-break-inside: avoid;
-// }
-
-// .color {
-//   height: 200px;
-//   background-color: #eee;
-// }
-
-// .footnote {
-//   footnote-style-position: inside;
-// }
-
-// .slab {
-//   background-color: #eee;
-//   padding: 1rem;
-//   margin: 1rem 0;
-// }
-
-// .floating {
-//   float: right;
-//   clear: both;
-// }
-
-// @media print {
-//   @page {
-//     size: A4 landscape;
-//   }
-
-//   body {
-//     font-size: 11pt;
-//     line-height: 1.4;
-//   }
-
-//   * {
-//     border: 1px solid blue;
-//   }
-
-//   .content {
-//     grid-area: 1 / 1 / span 1 / span 2;
-//     padding: 0;
-//   }
-
-//   .sidebar {
-//     display: none;
-//   }
-// }

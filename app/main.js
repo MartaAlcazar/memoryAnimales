@@ -1,12 +1,4 @@
-// 
-// 
-// 
-// 
-//NIVEL 1
-// 
-// 
-// 
-// 
+//
 
 const cards = document.querySelectorAll('.memory-card');
 
